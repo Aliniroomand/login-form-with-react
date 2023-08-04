@@ -27,5 +27,10 @@ if (!data.confirmPassword){
         } else{
             delete errors.confirmPassword
         }
+if (!data.isAccepted){
+        errors.isAccepted="you have accept our pravicy policies"
+        }else{
+            delete errors.isAccepted
+        }
 return errors;
  }
